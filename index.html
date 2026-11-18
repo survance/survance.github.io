@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survance · Aegis</title>
+<meta name="description" content="Aegis is a personal AI chief of staff that runs on hardware in the owner's own home or office.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#fbfaf7; --ink:#1d2430; --muted:#5b6575; --accent:#2f5d50; --rule:#e3e0d8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14181f; --ink:#e8e6e1; --muted:#a3abb8; --accent:#7fb8a6; --rule:#2a313c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom: 36px; }
+  header img { width:48px; height:48px; }
+  header .name { font-size: 22px; font-weight: 650; letter-spacing: .2px; }
+  header .by { color: var(--muted); font-size: 15px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 16px; font-weight: 650; }
+  h2 { font-size: 19px; margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  p, li { color: var(--ink); }
+  .lead { font-size: 19px; color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.svg" alt="">
+    <div><div class="name">Aegis</div><div class="by">by Survance</div></div>
+  </header>
+
+  <h1>A personal chief of staff that runs on your own hardware.</h1>
+  <p class="lead">Aegis keeps track of your email, calendar, bills and correspondence on a small computer
+  in your own home or office. Your records stay on that device, which you own and can inspect.</p>
+
+  <h2>Status</h2>
+  <p>Aegis is in private beta. It is not offered for sale and has no public sign-up.</p>
+
+  <h2>How Aegis uses bank data</h2>
+  <ul>
+    <li>Aegis connects to a bank only when its owner links an account themselves, through Plaid.</li>
+    <li>It reads transactions so it can tell which bills have been paid. It cannot move money or make payments.</li>
+    <li>Transactions are stored on the owner's own device, not on Survance's servers.</li>
+    <li>The owner can disconnect a bank at any time from the Aegis settings. Disconnecting asks Plaid to remove the connection.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Survance does not sell, share or rent personal data, and does not use it to train models.
+  Data a user connects to Aegis stays on their own device, except for the individual requests they
+  ask Aegis to make on their behalf.</p>
+
+  <footer>© 2026 Survance</footer>
+</main>
+</body>
+</html>
